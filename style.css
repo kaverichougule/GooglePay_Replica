@@ -681,7 +681,15 @@ margin: 5px 0;
 #pass{
   color: white;
 }
-.lastPage i{
-  top: 10px;
-  left: auto;
+
+.lastPage button{
+  padding: 10px 30px;
+  background-color: rgb(75, 75, 220);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  
 }

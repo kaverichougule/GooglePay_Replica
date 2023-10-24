@@ -73,7 +73,7 @@ ConfirmPay.addEventListener("click",()=>{
     })
 })
 
-let back=document.querySelector(".fa-arrow-left")
+let back=document.querySelector(".lastPage button")
 back.addEventListener("click",()=>{
   page5.style.display = "none";
   page1.style.display = "flex";
