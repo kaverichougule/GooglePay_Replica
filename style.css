@@ -682,5 +682,6 @@ margin: 5px 0;
   color: white;
 }
 .lastPage i{
-  left: 19rem;
+  top: 10px;
+  left: auto;
 }

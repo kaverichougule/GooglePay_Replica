@@ -68,8 +68,8 @@ ConfirmPay.addEventListener("click",()=>{
         page5.style.display="flex"
         audio.play();
     })
-    .catch((error)=>{
-        alert(msg)
+    .catch((data)=>{
+        console.log(data);
     })
 })
 
