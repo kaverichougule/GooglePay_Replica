@@ -1,23 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Pay Replica</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Easy pay</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="payment-container">
-        <div class="payment-details">
-            <!-- Payment details section -->
+    <section class="page1">
+        <div class="firstPage">
+            <div class="starting_section">
+                <div class="userName">
+                    KC
+                </div>
+                <p class="easyPay">EasyPay</p>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="inside_section">
+                <div class="hero">
+                    <img src="./img2.jpg" alt="banner" class="banner1">
+                </div>
+                <div class="sub_section2">
+                    <p>UPI MONEY TRANSFER</p>
+                </div>
+                <div class="icons">
+                    <span><i class="fa-solid fa-qrcode"></i>
+                        <p>Scan & <br> Pay</p>
+                    </span>
+                    <span><i class="fa-solid fa-address-book"></i>
+                        <p>To Mobile<br>or Contacts</p>
+                    </span>
+                    <span><i class="fa-solid fa-building-columns"></i>
+                        <p>To Bank<br>or Self A/c</p>
+                    </span>
+                    <span><i class="fa-solid fa-file-invoice-dollar"></i>
+                        <p>Balance & <br>History</p>
+                    </span>
+                    <span><i class="fa-solid fa-bullseye"></i>
+                        <!-- <i class="fa-solid fa-user"></i> -->
+                        <p>Personal<br>Loan</p>
+                    </span>
+                    <span><i class="fa-solid fa-mobile-screen"></i></i>
+                        <p>Prepaid <br>Recharge</p>
+                    </span>
+    
+                </div>
+                <div class="btn">
+                    <button>Pay By <br>Phone Number</button>
+                </div>
+            </div>
+            <div class="img2">
+                <img src="./img3.jpg" alt="" class="banner1">
+            </div>
         </div>
-        <div class="payment-actions">
-            <button id="start-payment">Start Payment</button>
+    </section>
+
+    <section class="page2">
+        <div class="secondPage">
+
+            <label for="">UPI Money Transfer</label>
+            <p>Enter Mobile Number</p>
+            <form action="">
+                <img src="https://cdn-icons-png.flaticon.com/512/321/321238.png" alt="">
+                <p>+91-</p>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder=" Mobile Number">
+            </form>
+            
+            <p class="ErrorMsg"></p>
+            <button class="page2Btn">Pay Now</button>
         </div>
-        <div class="payment-status">
-            <!-- Payment status messages will go here -->
+    </section>
+
+    <section class="page3">
+        <div class="thirdPage">
+            <div>
+                <h2 class="page3_text">Paying User</3>
+                    <h5 class="page3_text">+91-<span class="phoneNo">1234567891</span></h5>
+                    <h5 class="page3_text">Banking Name: SBI</h5>
+                    <!-- <label for="rs">Enter Amount in RS</label> -->
+                    <form action="" class="page3_form">
+                        <span style="font-size:16px;">₹ </span>
+                        <i class="fa fa-angle-double-right" style="font-size:16px"></i>
+                        <input type="number" id="AmountEntered" placeholder="Enter Amount">
+                    </form>
+            </div>
+            <p class="ErrorMsg"></p>
+
+            <button>Proceed to Pay</button>
         </div>
-    </div>
+    </section>
+
+    <section class="page4">
+        <div class="fourthPage">
+            <div class="top">
+                <h6>State Bank of India</h6>
+                <h6>xxxxx<span class="lastFour"></span></h6>
+            </div>
+
+            
+            <form action="">
+                <label for="pin">ENTER 6- DIGIT UPI PIN</label>
+                <input type="password" id="pass" maxlength="6">
+            </form>
+            <p class="ErrorMsg"></p>
+
+            <div class="warning">
+                You are transferring money from your account 
+                <span class="entered_no"></span>
+            </div>
+            <button>Confirm Pay</button>
+        </div>
+    </section>
+
+    <section class="page5">
+
+        <div class="lastPage">
+            <i class="fa-solid fa-arrow-left"></i>
+            <div class="success-checkmark">
+                <div class="check-icon">
+                  <span class="icon-line line-tip"></span>
+                  <span class="icon-line line-long"></span>
+                  <div class="icon-circle"></div>
+                  <div class="icon-fix"></div>
+                </div>
+              </div>
+              
+            <p>Payment Successful</p>
+        </div>
+    </section>
+    <div class="loading">Loading&#8230;</div>
+    <script src="https://kit.fontawesome.com/7c5861f7d9.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
